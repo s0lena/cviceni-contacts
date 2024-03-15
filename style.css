@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 400px;
+}
+
 .contact-list {
   background-color: #cfe1e7;
   padding: 5px;
@@ -14,7 +22,8 @@
   box-shadow: 0 0 15px #446d8059;
   padding: 20px;
   margin: 15px;
-  width: 400px;
+  display: flex;
+  flex-grow: 0;
 }
 .photo {
   width: 120px;
@@ -25,6 +34,7 @@
 
 .info {
   margin-left: 20px;
+  margin-right: 20px;
 }
 .info p {
   font-size: 22px;
@@ -32,6 +42,9 @@
 
 .buttons {
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .call,
